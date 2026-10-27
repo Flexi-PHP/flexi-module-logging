@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Logging\Test\Infrastructure\Persistence;
+namespace CubaDevOps\Flexi\Modules\Logging\Tests\Infrastructure\Persistence;
 
-use CubaDevOps\Flexi\Contracts\Interfaces\LogInterface;
-use CubaDevOps\Flexi\Contracts\Interfaces\MessageInterface;
-use CubaDevOps\Flexi\Contracts\ValueObjects\LogLevel;
+use Flexi\Contracts\Interfaces\LogInterface;
+use Flexi\Contracts\Interfaces\MessageInterface;
+use Flexi\Contracts\ValueObjects\LogLevel;
 use CubaDevOps\Flexi\Modules\Logging\Infrastructure\Persistence\InFileLogRepository;
-use CubaDevOps\Flexi\Test\TestData\TestDoubles\FileHandler;
 use PHPUnit\Framework\TestCase;
 
 class InFileLogRepositoryTest extends TestCase
@@ -20,9 +19,7 @@ class InFileLogRepositoryTest extends TestCase
     public function __construct()
     {
         parent::__construct();
-        $this->log_path = './var/logs/test.log';
-        $file_handler = new FileHandler();
-        $file_handler->createFileIfNotExist($this->log_path);
+        $this->log_path = tempnam(sys_get_temp_dir(), 'flexi-module-logging-');
     }
 
     public function setUp(): void
@@ -33,6 +30,13 @@ class InFileLogRepositoryTest extends TestCase
             $this->log_path,
             '[{level} - {time}]: {message} - {context}'
         );
+    }
+
+    protected function tearDown(): void
+    {
+        if (is_file($this->log_path)) {
+            unlink($this->log_path);
+        }
     }
 
     public function testSave(): void

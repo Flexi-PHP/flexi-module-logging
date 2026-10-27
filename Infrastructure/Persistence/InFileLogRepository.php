@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace CubaDevOps\Flexi\Modules\Logging\Infrastructure\Persistence;
 
-use CubaDevOps\Flexi\Contracts\Classes\Traits\FileHandlerTrait;
-use CubaDevOps\Flexi\Contracts\Interfaces\LogInterface;
-use CubaDevOps\Flexi\Contracts\Interfaces\LogRepositoryInterface;
+use Flexi\Contracts\Classes\Traits\FileHandlerTrait;
+use Flexi\Contracts\Interfaces\LogInterface;
+use Flexi\Contracts\Interfaces\LogRepositoryInterface;
 
 class InFileLogRepository implements LogRepositoryInterface
 {

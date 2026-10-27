@@ -3,15 +3,15 @@
     {
       "name": "logger",
       "class": {
-        "name": "CubaDevOps\\Flexi\\Contracts\\Classes\\PsrLogger",
+        "name": "Flexi\\Contracts\\Classes\\PsrLogger",
         "arguments": [
-          "@CubaDevOps\\Flexi\\Contracts\\Interfaces\\LogRepositoryInterface",
-          "@CubaDevOps\\Flexi\\Contracts\\Interfaces\\ConfigurationInterface"
+          "@Flexi\\Contracts\\Interfaces\\LogRepositoryInterface",
+          "@Flexi\\Contracts\\Interfaces\\ConfigurationInterface"
         ]
       }
     },
     {
-      "name": "CubaDevOps\\Flexi\\Contracts\\Interfaces\\LogRepositoryInterface",
+      "name": "Flexi\\Contracts\\Interfaces\\LogRepositoryInterface",
       "class": {
         "name": "CubaDevOps\\Flexi\\Modules\\Logging\\Infrastructure\\Persistence\\InFileLogRepository",
         "arguments": [
