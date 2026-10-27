@@ -1,7 +1,7 @@
 {
   "name": "cubadevops/flexi-module-logging",
   "description": "Logging module for Flexi Framework with PSR-3 support",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "flexi-module",
   "license": "MIT",
   "keywords": [
@@ -25,7 +25,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CubaDevOps\\Flexi\\Modules\\Logging\\": ""
+      "Flexi\\Modules\\Logging\\": ""
     }
   },
   "extra": {
@@ -49,7 +49,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "CubaDevOps\\Flexi\\Modules\\Logging\\Tests\\": "tests/"
+      "Flexi\\Modules\\Logging\\Tests\\": "tests/"
     }
   },
   "require-dev": {

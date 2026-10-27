@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Logging\Tests\Infrastructure\Persistence;
+namespace Flexi\Modules\Logging\Tests\Infrastructure\Persistence;
 
 use Flexi\Contracts\Interfaces\LogInterface;
 use Flexi\Contracts\Interfaces\MessageInterface;
 use Flexi\Contracts\ValueObjects\LogLevel;
-use CubaDevOps\Flexi\Modules\Logging\Infrastructure\Persistence\InFileLogRepository;
+use Flexi\Modules\Logging\Infrastructure\Persistence\InFileLogRepository;
 use PHPUnit\Framework\TestCase;
 
 class InFileLogRepositoryTest extends TestCase

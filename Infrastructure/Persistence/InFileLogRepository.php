@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Logging\Infrastructure\Persistence;
+namespace Flexi\Modules\Logging\Infrastructure\Persistence;
 
 use Flexi\Contracts\Classes\Traits\FileHandlerTrait;
 use Flexi\Contracts\Interfaces\LogInterface;

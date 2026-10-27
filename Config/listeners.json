@@ -2,7 +2,7 @@
   {
     "event": "*",
     "listeners": [
-      "CubaDevOps\\Flexi\\Modules\\Logging\\Infrastructure\\EventListeners\\LoggerEventListener"
+      "Flexi\\Modules\\Logging\\Infrastructure\\EventListeners\\LoggerEventListener"
     ]
   }
 ]

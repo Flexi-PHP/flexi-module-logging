@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Logging\Infrastructure\EventListeners;
+namespace Flexi\Modules\Logging\Infrastructure\EventListeners;
 
 use Flexi\Contracts\Classes\EventListener;
 use Flexi\Contracts\Interfaces\EventInterface;
