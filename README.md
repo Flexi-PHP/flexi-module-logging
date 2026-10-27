@@ -6,7 +6,7 @@ The Logging module provides a PSR-3 logger backed by the Flexi contract log repo
 
 `Config/services.json` registers the `logger` service and `LogRepositoryInterface` adapter. Configure `log_file_path` and `log_format` through the application configuration. `Config/listeners.json` subscribes the logger listener to all events.
 
-Install `cubadevops/flexi-module-logging` with Composer and activate the `Logging` module. The module supports PHP 7.4+, Flexi Core `^3.2`, and `flexi/contracts` `^5.2.1`.
+Install `flexi/flexi-module-logging` with Composer and activate the `Logging` module. The module supports PHP 7.4+, Flexi Core `^3.2`, and `flexi/contracts` `^5.2.1`.
 
 ## Tests
 
