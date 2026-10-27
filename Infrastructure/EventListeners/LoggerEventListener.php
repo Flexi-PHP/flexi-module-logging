@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Logging\Application\EventListeners;
+namespace Flexi\Modules\Logging\Infrastructure\EventListeners;
 
-use CubaDevOps\Flexi\Contracts\Classes\EventListener;
-use CubaDevOps\Flexi\Contracts\Interfaces\EventInterface;
-use CubaDevOps\Flexi\Contracts\ValueObjects\LogLevel;
+use Flexi\Contracts\Classes\EventListener;
+use Flexi\Contracts\Interfaces\EventInterface;
+use Flexi\Contracts\ValueObjects\LogLevel;
 use Psr\Log\LoggerInterface;
 
 class LoggerEventListener extends EventListener
